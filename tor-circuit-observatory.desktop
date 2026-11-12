@@ -6,6 +6,7 @@ GenericName=Tor health monitor
 Comment=Compact privacy-preserving monitor for Tor circuits
 Exec=/home/scorn/tor-circuit-observatory/tor_observatory.py
 Path=/home/scorn/tor-circuit-observatory
+Icon=network-server
 Terminal=false
 Categories=Network;
 Keywords=Tor;circuit;guards;privacy;network;
