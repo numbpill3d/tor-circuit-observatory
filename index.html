@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Local-first v3 onion service custodian" />
+  <title>ONION SERVICE CUSTODIAN</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./accessibility-overrides.css" />
+</head>
+<body>
+<main class="desktop-shell">
+  <header class="menubar" aria-label="Application menu"><div class="apple-mark">⌘</div><nav class="menu-links"><button class="menu-item is-active">Custodian</button><button class="menu-item">File</button><button class="menu-item">View</button><button class="menu-item">Window</button></nav><div class="menubar-status"><span class="status-dot"></span> LOCAL ONLY <span class="menu-clock" id="clock">--:--:--</span></div></header>
+  <section class="window" aria-labelledby="app-title">
+    <div class="titlebar"><span class="titlebar-grip"></span><h1 id="app-title">ONION SERVICE CUSTODIAN</h1><span class="titlebar-grip"></span></div>
+    <div class="toolbar"><div class="toolbar-left"><span class="led led-green"></span><strong>TOR CONTROL CONNECTED</strong><span class="toolbar-muted">v0.1.0 / local socket</span></div><div class="toolbar-actions"><button class="pixel-button" id="refreshButton">CHECK NOW ↻</button><button class="pixel-button" id="lockButton">LOCK VAULT</button></div></div>
+    <div class="dashboard-grid">
+      <aside class="sidebar panel-lines"><div class="side-label">CUSTODY</div><button class="side-tab is-selected" data-view="overview"><span>▦</span> OVERVIEW</button><button class="side-tab" data-view="services"><span>◈</span> SERVICES <b>2</b></button><button class="side-tab" data-view="reachability"><span>⌁</span> REACHABILITY</button><button class="side-tab" data-view="authorization"><span>⊙</span> AUTHORIZATION <b>1</b></button><button class="side-tab" data-view="audit"><span>!</span> EXPOSURE AUDIT <b class="alert-count">1</b></button><div class="side-rule"></div><div class="side-label">SAFE MODE</div><div class="capture-toggle"><span class="toggle-box is-on"></span><span>Keys stay local</span></div><div class="capture-toggle"><span class="toggle-box is-on"></span><span>Confirm identity rotation</span></div><div class="capture-toggle muted"><span class="toggle-box"></span><span>Upload diagnostics</span></div><div class="privacy-note">SECRET MATERIAL<br><strong>NEVER DISPLAYED</strong><br><small>fingerprints only</small></div><div class="sidebar-bottom"><span class="led led-green"></span> vault unlocked / memory only</div></aside>
+      <section class="content-area" id="contentArea" aria-live="polite"></section>
+    </div>
+    <footer class="statusbar"><span>● NO NETWORK SYNC</span><span>CONFIG: REPRODUCIBLE</span><span>SECRET VALUES REDACTED</span></footer>
+  </section>
+</main>
+<dialog id="actionDialog" class="privacy-dialog"><div class="dialog-titlebar"><span id="dialogTitle">CONFIRM ACTION</span><button id="closeDialog" aria-label="Close">×</button></div><div class="dialog-body" id="dialogBody"></div></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="./custodian.js"></script>
+</body>
+</html>

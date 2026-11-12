@@ -1,0 +1,40 @@
+/* Legibility pass: the compact Mac proportions remain, but functional text stays readable. */
+body{font-size:13px}
+.titlebar h1{padding-block:6px}
+.pixel-button{padding-block:8px}
+.health-badge{padding-block:8px}
+.info-mark{width:22px;height:22px}
+.callout-mark{width:28px;height:28px}
+.menu-item,.pixel-button,.side-tab,.text-button,.row-action{font-size:12px}
+.menubar-status,.toolbar-muted,.panel-meta,.metric-sub,.side-label,.eyebrow,.metric-label{font-size:12px}
+.side-tab{padding-inline:10px}
+.capture-toggle,.privacy-note,.route-callout p,.service-status small,.service-health small,.boundary-item small,.boundary-foot,.graph-legend,.event-row{font-size:12px}
+.privacy-note{padding:12px 9px}
+.metric-cell{padding:14px 15px}
+.panel-heading{padding-inline:14px}
+.service-row{padding-inline:14px;min-height:82px}
+.boundary-list{padding:8px 14px}
+.boundary-item{padding-block:12px}
+.graph-wrap{padding-left:8px;padding-right:14px}
+.graph-y,.event-time{font-size:12px}
+.statusbar{font-size:12px;padding:9px 14px}
+.dialog-body p{font-size:12px}
+.view-panel{margin-bottom:14px}
+.panel-footnote,.helper-copy{padding:14px;color:var(--mid);font-size:12px}
+.action-strip{display:flex;align-items:center;gap:14px;margin:14px 0}
+.health-table,.auth-row,.route-row{padding:0 14px}
+.health-table>div,.auth-row,.route-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding-block:14px;border-bottom:1px dotted var(--paper-dark)}
+.health-table span,.auth-row small,.route-row small{font-size:12px;color:var(--mid)}
+.auth-row{grid-template-columns:1fr auto auto}
+.auth-row small{display:block;margin-top:4px}
+.empty-auth{margin:14px;border:1px dashed var(--paper-dark);padding:16px;color:var(--mid);font-size:12px}
+.audit-banner{border:1px solid var(--amber);background:#e9e3d5;padding:14px;margin-bottom:14px}
+.audit-banner strong{font-size:12px;color:var(--amber)}
+.audit-banner p{margin:6px 0 0;font-size:12px;line-height:1.5}
+.route-row{grid-template-columns:80px 1fr 1fr auto}
+.route-row b,.route-row small{font-size:12px}
+.warn-row{background:#e9e3d5}
+.config-preview{margin:0;background:var(--ink);color:var(--paper-light);padding:14px;text-align:left;white-space:pre-wrap;font:12px/1.5 var(--mono)}
+.text-input{display:block;width:100%;border:1px solid var(--ink);background:var(--paper-light);padding:10px;font:12px var(--mono);margin-top:12px}
+.callout-mark{margin:2px}
+@media(max-width:800px){.side-tab{font-size:11px;padding-inline:6px}.content-area{padding-inline:14px}.service-row{padding:14px}.route-callout{padding:13px 14px}.action-strip{align-items:flex-start;flex-direction:column;gap:9px}.route-row{grid-template-columns:1fr auto}.route-row b,.route-row small{grid-column:1/-1}.route-row .row-action{grid-column:2;grid-row:1}.health-table>div{grid-template-columns:1fr}.auth-row{grid-template-columns:1fr auto}.auth-row .row-action{grid-column:2;grid-row:1/3}}

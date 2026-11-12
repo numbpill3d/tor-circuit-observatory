@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Onion Service Custodian
+Comment=Native local-first v3 onion service operator
+Exec=/usr/bin/python3 /home/scorn/tor-circuit-observatory/onion_custodian_app.py
+Path=/home/scorn/tor-circuit-observatory
+Terminal=false
+Categories=Utility;
+StartupNotify=true
+StartupWMClass=onion-custodian
