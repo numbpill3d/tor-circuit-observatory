@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Tor Circuit Observatory
+GenericName=Tor health monitor
+Comment=Compact privacy-preserving monitor for Tor circuits
+Exec=/home/scorn/tor-circuit-observatory/tor_observatory.py
+Path=/home/scorn/tor-circuit-observatory
+Terminal=false
+Categories=Network;
+Keywords=Tor;circuit;guards;privacy;network;
+StartupNotify=true
+StartupWMClass=Tor Circuit Observatory
